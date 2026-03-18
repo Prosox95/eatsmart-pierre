@@ -1,5 +1,5 @@
 <?php
-header("Acess-Control-Allow-Origin: *");
+header("Access-Control-Allow-Origin: *");
 require_once "controllers/ArticleController.php";
 require_once "controllers/CommandeController.php";
 require_once "controllers/CategorieController.php";
