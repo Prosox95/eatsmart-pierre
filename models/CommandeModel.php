@@ -62,22 +62,44 @@ class CommandeModel
     }
 
     public function createDBCommandes($data) {
-        /*** Crée une nouvelle commande dans la base de données.*/
-        $sql = "INSERT INTO commande (id_commande, date_commande, prix_total, etat) VALUES (:id_commande, :date_commande, :prix_total, :etat)";
-        "INSERT INTO assoc_article_commande (id_article, id_commande, quantite_article) VALUES (:id_article, :id_commande, :quantite_article)";
-        $stmt = $this->pdo->prepare($sql);
-        $stmt->bindParam(':id_commande', $data['id_commande'], PDO::PARAM_INT);
-        $stmt->bindParam(':date_commande', $data['date_commande'], PDO::PARAM_STR);
-        $stmt->bindParam(':prix_total', $data['prix_total'], PDO::PARAM_STR);
-        $stmt->bindParam(':etat', $data['etat'], PDO::PARAM_STR);
-        $stmt->bindParam(':id_article', $data['id_article'], PDO::PARAM_INT);
-        $stmt->bindParam(':quantite_article', $data['quantite_article'], PDO::PARAM_INT);
+        try {
+            // Début de la transaction
+            $this->pdo->beginTransaction();
 
-        $stmt->execute();
+            // 1. Insertion de la commande
+            $sqlCommande = "INSERT INTO commande (id_commande, date_commande, prix_total, etat)
+                            VALUES (:id_commande, :date_commande, :prix_total, :etat)";
+            $stmt = $this->pdo->prepare($sqlCommande);
+            $stmt->bindParam(':id_commande', $data['id_commande'], PDO::PARAM_INT);
+            $stmt->bindParam(':date_commande', $data['date_commande'], PDO::PARAM_STR);
+            $stmt->bindParam(':prix_total', $data['prix_total'], PDO::PARAM_STR);
+            $stmt->bindParam(':etat', $data['etat'], PDO::PARAM_STR);
+            $stmt->execute();
 
-        return $this->getDBCommandeById($data['id_commande']);
+            // 2. Insertion des articles liés
+            $sqlAssoc = "INSERT INTO assoc_article_commande (id_article, id_commande, quantite_article)
+                        VALUES (:id_article, :id_commande, :quantite_article)";
+            $stmtAssoc = $this->pdo->prepare($sqlAssoc);
+
+            foreach ($data['articles'] as $article) {
+                $stmtAssoc->bindParam(':id_article', $article['id_article'], PDO::PARAM_INT);
+                $stmtAssoc->bindParam(':id_commande', $data['id_commande'], PDO::PARAM_INT);
+                $stmtAssoc->bindParam(':quantite_article', $article['quantite'], PDO::PARAM_INT);
+                $stmtAssoc->execute();
+            }
+
+            // 3. Validation
+            $this->pdo->commit();
+
+            // 4. Retourne la commande créée
+            return $this->getDBCommandeById($data['id_commande']);
+
+        } catch (Exception $e) {
+            // Si ça foire, on annule tout
+            $this->pdo->rollBack();
+            throw $e;
+        }
     }
-
 }
 
 // $commande = new CommandeModel();

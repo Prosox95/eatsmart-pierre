@@ -9,7 +9,526 @@
 	"item": [
 		{
 			"name": "articles",
-			"item": []
+			"item": [
+				{
+					"name": "getAllArticles",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/pierreburnier/pierre-api-eatsmart/articles",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"pierreburnier",
+								"pierre-api-eatsmart",
+								"articles"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "getAllArticles",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost/pierreburnier/pierre-api-eatsmart/articles",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"pierreburnier",
+										"pierre-api-eatsmart",
+										"articles"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 15 Oct 2025 20:40:41 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.59 (Win64) PHP/8.2.18 mod_fcgid/2.3.10-dev"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.18"
+								},
+								{
+									"key": "Content-Length",
+									"value": "5959"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/html; charset=UTF-8"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id_article\": 1,\n        \"nom\": \"Anchois 23cm\",\n        \"prix\": \"7.9000\",\n        \"description\": \"sauce tomate premium, origan, huile d'olive extra vierge, anchois, olive\",\n        \"id_categorie\": 1\n    },\n    {\n        \"id_article\": 2,\n        \"nom\": \"Anchois 33cm\",\n        \"prix\": \"11.9000\",\n        \"description\": \"sauce tomate premium, origan, huile d'olive extra vierge, anchois, olive\",\n        \"id_categorie\": 1\n    },\n    {\n        \"id_article\": 3,\n        \"nom\": \"Emmental 23cm\",\n        \"prix\": \"7.9000\",\n        \"description\": \"sauce tomate premium, origan, huile d'olive extra vierge, emmental, basilic, olive\",\n        \"id_categorie\": 1\n    },\n    {\n        \"id_article\": 4,\n        \"nom\": \"Emmental 33cm\",\n        \"prix\": \"11.9000\",\n        \"description\": \"sauce tomate premium, origan, huile d'olive extra vierge, emmental, basilic, olive\",\n        \"id_categorie\": 1\n    },\n    {\n        \"id_article\": 5,\n        \"nom\": \"Margherita 23cm\",\n        \"prix\": \"7.9000\",\n        \"description\": \"sauce tomate premium, origan, huile d'olive extra vierge, mozzarella\",\n        \"id_categorie\": 1\n    },\n    {\n        \"id_article\": 6,\n        \"nom\": \"Margherita 33cm\",\n        \"prix\": \"11.9000\",\n        \"description\": \"sauce tomate premium, origan, huile d'olive extra vierge, mozzarella\",\n        \"id_categorie\": 1\n    },\n    {\n        \"id_article\": 7,\n        \"nom\": \"3 fromages 23cm\",\n        \"prix\": \"8.4000\",\n        \"description\": \"sauce tomate premium, origan, huile d'olive extra vierge, mozzarella, emmental, chevre\",\n        \"id_categorie\": 1\n    },\n    {\n        \"id_article\": 8,\n        \"nom\": \"3 fromages 33cm\",\n        \"prix\": \"12.9000\",\n        \"description\": \"sauce tomate premium, origan, huile d'olive extra vierge, mozzarella, emmental, chevre\",\n        \"id_categorie\": 1\n    },\n    {\n        \"id_article\": 9,\n        \"nom\": \"4 fromages 23cm\",\n        \"prix\": \"8.9000\",\n        \"description\": \"sauce tomate premium, origan, huile d'olive extra vierge, mozzarella, emmental, chevre, roquefort\",\n        \"id_categorie\": 1\n    },\n    {\n        \"id_article\": 10,\n        \"nom\": \"4 fromages 33cm\",\n        \"prix\": \"13.9000\",\n        \"description\": \"sauce tomate premium, origan, huile d'olive extra vierge, mozzarella, emmental, chevre, roquefort\",\n        \"id_categorie\": 1\n    },\n    {\n        \"id_article\": 11,\n        \"nom\": \"Royale 23cm\",\n        \"prix\": \"8.9000\",\n        \"description\": \"sauce tomate premium, origan, huile d'olive extra vierge, mozzarella, jambon label rouge, champignon brun, olive\",\n        \"id_categorie\": 2\n    },\n    {\n        \"id_article\": 12,\n        \"nom\": \"Royale 33cm\",\n        \"prix\": \"13.9000\",\n        \"description\": \"sauce tomate premium, origan, huile d'olive extra vierge, mozzarella, jambon label rouge, champignon brun, olive\",\n        \"id_categorie\": 2\n    },\n    {\n        \"id_article\": 13,\n        \"nom\": \"Vegetarienne 23cm\",\n        \"prix\": \"8.9000\",\n        \"description\": \"sauce tomate premium, origan, huile d'olive extra vierge, mozzarella, roquette, oignon rouge, poivron, champignon brun, olive\",\n        \"id_categorie\": 2\n    },\n    {\n        \"id_article\": 14,\n        \"nom\": \"Vegetarienne 33cm\",\n        \"prix\": \"13.9000\",\n        \"description\": \"sauce tomate premium, origan, huile d'olive extra vierge, mozzarella, roquette, oignon rouge, poivron, champignon brun, olive\",\n        \"id_categorie\": 2\n    },\n    {\n        \"id_article\": 15,\n        \"nom\": \"Provencale 23cm\",\n        \"prix\": \"8.9000\",\n        \"description\": \"sauce tomate premium, origan, huile d'olive extra vierge, mozzarella, filets de poulet rôti, oignon rouge, poivron, olive\",\n        \"id_categorie\": 2\n    },\n    {\n        \"id_article\": 16,\n        \"nom\": \"Provencale 33cm\",\n        \"prix\": \"13.9000\",\n        \"description\": \"sauce tomate premium, origan, huile d'olive extra vierge, mozzarella, filets de poulet rôti, oignon rouge, poivron, olive\",\n        \"id_categorie\": 2\n    },\n    {\n        \"id_article\": 17,\n        \"nom\": \"Espagnol 23cm\",\n        \"prix\": \"8.9000\",\n        \"description\": \"sauce tomate premium, origan, huile d'olive extra vierge, mozzarella, chorizo de León, poivron, olive\",\n        \"id_categorie\": 2\n    },\n    {\n        \"id_article\": 18,\n        \"nom\": \"Espagnol 33cm\",\n        \"prix\": \"13.9000\",\n        \"description\": \"sauce tomate premium, origan, huile d'olive extra vierge, mozzarella, chorizo de León, poivron, olive\",\n        \"id_categorie\": 2\n    },\n    {\n        \"id_article\": 19,\n        \"nom\": \"Italienne 23cm\",\n        \"prix\": \"10.4000\",\n        \"description\": \"sauce tomate premium, origan, huile d'olive extra vierge, mozzarella, jambon cru IGP, roquette, parmigiano reggiano, olive\",\n        \"id_categorie\": 2\n    },\n    {\n        \"id_article\": 20,\n        \"nom\": \"Italienne 33cm\",\n        \"prix\": \"16.9000\",\n        \"description\": \"sauce tomate premium, origan, huile d'olive extra vierge, mozzarella, jambon cru IGP, roquette, parmigiano reggiano, olive\",\n        \"id_categorie\": 2\n    },\n    {\n        \"id_article\": 21,\n        \"nom\": \"Armenienne 23cm\",\n        \"prix\": \"8.9000\",\n        \"description\": \"sauce crème fraîche premium, mozzarella, viande hachée 100% pur bœuf, oignon rouge, olive\",\n        \"id_categorie\": 3\n    },\n    {\n        \"id_article\": 22,\n        \"nom\": \"Armenienne 33cm\",\n        \"prix\": \"13.9000\",\n        \"description\": \"sauce crème fraîche premium, mozzarella, viande hachée 100% pur bœuf, oignon rouge, olive\",\n        \"id_categorie\": 3\n    },\n    {\n        \"id_article\": 23,\n        \"nom\": \"White royale 23cm\",\n        \"prix\": \"8.9000\",\n        \"description\": \"sauce crème fraîche premium, mozzarella, jambon label rouge, champignon brun, olive\",\n        \"id_categorie\": 3\n    },\n    {\n        \"id_article\": 24,\n        \"nom\": \"White royale 33cm\",\n        \"prix\": \"13.9000\",\n        \"description\": \"sauce crème fraîche premium, mozzarella, jambon label rouge, champignon brun, olive\",\n        \"id_categorie\": 3\n    },\n    {\n        \"id_article\": 25,\n        \"nom\": \"Chevre miel 23cm\",\n        \"prix\": \"8.9000\",\n        \"description\": \"sauce crème fraîche premium, mozzarella, chevre, miel, olive\",\n        \"id_categorie\": 3\n    },\n    {\n        \"id_article\": 26,\n        \"nom\": \"Chevre miel 33cm\",\n        \"prix\": \"13.9000\",\n        \"description\": \"sauce crème fraîche premium, mozzarella, chevre, miel, olive\",\n        \"id_categorie\": 3\n    },\n    {\n        \"id_article\": 27,\n        \"nom\": \"Tiramisu\",\n        \"prix\": \"3.9000\",\n        \"description\": \"boudoirs imbibés ou non de café, mascarpone, œufs, sucre, arôme vanille, cacao en poudre\",\n        \"id_categorie\": 4\n    },\n    {\n        \"id_article\": 28,\n        \"nom\": \"Gourmande\",\n        \"prix\": \"6.9000\",\n        \"description\": \"nutella, avec une glace noix de coco râpé ou chocolat, supplément fruits frais possible\",\n        \"id_categorie\": 4\n    },\n    {\n        \"id_article\": 29,\n        \"nom\": \"Eaux\",\n        \"prix\": \"1.9000\",\n        \"description\": \"eaux cristalline, san pellegrino, badoit\",\n        \"id_categorie\": 5\n    },\n    {\n        \"id_article\": 30,\n        \"nom\": \"Soda 33cl\",\n        \"prix\": \"1.9000\",\n        \"description\": \"coca original, zero, cherry\",\n        \"id_categorie\": 5\n    },\n    {\n        \"id_article\": 31,\n        \"nom\": \"Soda 1L+\",\n        \"prix\": \"3.0000\",\n        \"description\": \"coca, icetea, orangina, sprite, oasis\",\n        \"id_categorie\": 5\n    },\n    {\n        \"id_article\": 32,\n        \"nom\": \"Biere\",\n        \"prix\": \"3.5000\",\n        \"description\": \"desperados, heineken\",\n        \"id_categorie\": 5\n    },\n    {\n        \"id_article\": 33,\n        \"nom\": \"Vin AOP 25cl\",\n        \"prix\": \"4.9000\",\n        \"description\": \"rouge, rose\",\n        \"id_categorie\": 5\n    },\n    {\n        \"id_article\": 34,\n        \"nom\": \"Vin AOP 50cl\",\n        \"prix\": \"7.5000\",\n        \"description\": \"rouge, rose\",\n        \"id_categorie\": 5\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "getArticleById",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id_article\": 36,\r\n    \"nom\": \"Anchois 100cm\",\r\n    \"prix\": \"70.9000\",\r\n    \"description\": \"sauce tomate premium, origan, huile d'olive extra vierge, anchois, olive\",\r\n    \"id_categorie\": 1\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost/pierreburnier/pierre-api-eatsmart/articles/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"pierreburnier",
+								"pierre-api-eatsmart",
+								"articles",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "getArticleById",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost/pierreburnier/pierre-api-eatsmart/articles/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"pierreburnier",
+										"pierre-api-eatsmart",
+										"articles",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 15 Oct 2025 20:40:35 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.59 (Win64) PHP/8.2.18 mod_fcgid/2.3.10-dev"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.18"
+								},
+								{
+									"key": "Content-Length",
+									"value": "159"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/html; charset=UTF-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id_article\": 1,\n    \"nom\": \"Anchois 23cm\",\n    \"prix\": \"7.9000\",\n    \"description\": \"sauce tomate premium, origan, huile d'olive extra vierge, anchois, olive\",\n    \"id_categorie\": 1\n}"
+						}
+					]
+				},
+				{
+					"name": "getAllCommandesByArticle",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/pierreburnier/pierre-api-eatsmart/articles/1/commandes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"pierreburnier",
+								"pierre-api-eatsmart",
+								"articles",
+								"1",
+								"commandes"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "getAllCommandesByArticle",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost/pierreburnier/pierre-api-eatsmart/articles/1/commandes",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"pierreburnier",
+										"pierre-api-eatsmart",
+										"articles",
+										"1",
+										"commandes"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 15 Oct 2025 20:39:29 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.59 (Win64) PHP/8.2.18 mod_fcgid/2.3.10-dev"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.18"
+								},
+								{
+									"key": "Content-Length",
+									"value": "616"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/html; charset=UTF-8"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"nom\": \"Anchois 23cm\",\n        \"id_article\": 1,\n        \"id_commande\": 1,\n        \"quantite_article\": \"1.00\",\n        \"date_commande\": \"2024-10-25 00:00:00\",\n        \"prix_total\": 7.9,\n        \"etat\": \"en cours\"\n    },\n    {\n        \"nom\": \"Anchois 23cm\",\n        \"id_article\": 1,\n        \"id_commande\": 2,\n        \"quantite_article\": \"1.00\",\n        \"date_commande\": \"2024-10-25 00:00:00\",\n        \"prix_total\": 23.2,\n        \"etat\": \"en cours\"\n    },\n    {\n        \"nom\": \"Anchois 23cm\",\n        \"id_article\": 1,\n        \"id_commande\": 3,\n        \"quantite_article\": \"3.00\",\n        \"date_commande\": \"2024-10-25 00:00:00\",\n        \"prix_total\": 23.7,\n        \"etat\": \"en cours\"\n    },\n    {\n        \"nom\": \"Anchois 23cm\",\n        \"id_article\": 1,\n        \"id_commande\": 4,\n        \"quantite_article\": \"2.00\",\n        \"date_commande\": \"2024-10-25 00:00:00\",\n        \"prix_total\": 34.2,\n        \"etat\": \"en cours\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "createArticle",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id_article\": 70,\r\n    \"nom\": \"Anchois 100cm\",\r\n    \"prix\": \"70.9000\",\r\n    \"description\": \"sauce tomate premium, origan, huile d'olive extra vierge, anchois, olive\",\r\n    \"id_categorie\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/pierreburnier/pierre-api-eatsmart/articles",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"pierreburnier",
+								"pierre-api-eatsmart",
+								"articles"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id_article\": 36,\r\n    \"nom\": \"Anchois 100cm\",\r\n    \"prix\": \"70.9000\",\r\n    \"description\": \"sauce tomate premium, origan, huile d'olive extra vierge, anchois, olive\",\r\n    \"id_categorie\": 1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost/pierreburnier/pierre-api-eatsmart/articles/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"pierreburnier",
+										"pierre-api-eatsmart",
+										"articles",
+										"1"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 15 Oct 2025 20:56:17 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.59 (Win64) PHP/8.2.18 mod_fcgid/2.3.10-dev"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.18"
+								},
+								{
+									"key": "Content-Length",
+									"value": "162"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/html; charset=UTF-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id_article\": 36,\n    \"nom\": \"Anchois 100cm\",\n    \"prix\": \"70.0000\",\n    \"description\": \"sauce tomate premium, origan, huile d'olive extra vierge, anchois, olive\",\n    \"id_categorie\": 1\n}"
+						}
+					]
+				},
+				{
+					"name": "deleteArticle",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id_article\": 36,\r\n    \"nom\": \"Anchois 100cm\",\r\n    \"prix\": \"70.9000\",\r\n    \"description\": \"sauce tomate premium, origan, huile d'olive extra vierge, anchois, olive\",\r\n    \"id_categorie\": 1\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost/pierreburnier/pierre-api-eatsmart/articles/35",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"pierreburnier",
+								"pierre-api-eatsmart",
+								"articles",
+								"35"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id_article\": 36,\r\n    \"nom\": \"Anchois 100cm\",\r\n    \"prix\": \"70.9000\",\r\n    \"description\": \"sauce tomate premium, origan, huile d'olive extra vierge, anchois, olive\",\r\n    \"id_categorie\": 1\r\n}"
+								},
+								"url": {
+									"raw": "http://localhost/pierreburnier/pierre-api-eatsmart/articles/36",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"pierreburnier",
+										"pierre-api-eatsmart",
+										"articles",
+										"36"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 15 Oct 2025 21:01:43 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.59 (Win64) PHP/8.2.18 mod_fcgid/2.3.10-dev"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.18"
+								},
+								{
+									"key": "Content-Length",
+									"value": "53"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/html; charset=UTF-8"
+								}
+							],
+							"cookie": [
+								{
+									"expires": "Invalid Date",
+									"domain": "",
+									"path": ""
+								}
+							],
+							"body": "{\n    \"message\": \"Article supprimé avec succès.\"\n}"
+						}
+					]
+				},
+				{
+					"name": "updateArticle",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id_article\": 35,\r\n    \"nom\": \"Anchois 1000000cm\",\r\n    \"prix\": \"70.0000\",\r\n    \"description\": \"sauce tomate premium, origan, huile d'olive extra vierge, anchois, olive\",\r\n    \"id_categorie\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/pierreburnier/pierre-api-eatsmart/articles/35",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"pierreburnier",
+								"pierre-api-eatsmart",
+								"articles",
+								"35"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id_article\": 35,\r\n    \"nom\": \"Anchois 1000000cm\",\r\n    \"prix\": \"70.0000\",\r\n    \"description\": \"sauce tomate premium, origan, huile d'olive extra vierge, anchois, olive\",\r\n    \"id_categorie\": 1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost/pierreburnier/pierre-api-eatsmart/articles/35",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"pierreburnier",
+										"pierre-api-eatsmart",
+										"articles",
+										"35"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 15 Oct 2025 21:17:52 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.59 (Win64) PHP/8.2.18 mod_fcgid/2.3.10-dev"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.18"
+								},
+								{
+									"key": "Content-Length",
+									"value": "166"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/html; charset=UTF-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id_article\": 35,\n    \"nom\": \"Anchois 1000000cm\",\n    \"prix\": \"70.0000\",\n    \"description\": \"sauce tomate premium, origan, huile d'olive extra vierge, anchois, olive\",\n    \"id_categorie\": 1\n}"
+						}
+					]
+				}
+			]
 		},
 		{
 			"name": "categories",
@@ -676,22 +1195,79 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"id_commande\": 10,\r\n  \"date_commande\": \"2024-10-25 00:00:00\",\r\n  \"prix_total\": 10,\r\n  \"etat\": \"en cours\",\r\n  \"articles\": [\r\n    {\r\n      \"id_article\": 1,\r\n      \"quantite\": 10\r\n    },\r\n    {\r\n      \"id_article\": 2,\r\n      \"quantite\": 5\r\n    },\r\n    {\r\n      \"id_article\": 3,\r\n      \"quantite\": 2\r\n    }\r\n  ]\r\n}"
+							"raw": "{\r\n  \"id_commande\": 11,\r\n  \"date_commande\": \"2024-10-25 00:00:00\",\r\n  \"prix_total\": 30,\r\n  \"etat\": \"en cours\",\r\n  \"articles\": [\r\n    {\"id_article\": 1, \"quantite\": 10},\r\n    {\"id_article\": 2, \"quantite\": 5},\r\n    {\"id_article\": 3, \"quantite\": 2}\r\n  ]\r\n}\r\n"
 						},
 						"url": {
-							"raw": "http://localhost/pierreburnier/pierre-api-eatsmart/categories",
+							"raw": "http://localhost/eatsmart-pierre/commandes",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"path": [
-								"pierreburnier",
-								"pierre-api-eatsmart",
-								"categories"
+								"eatsmart-pierre",
+								"commandes"
 							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"name": "createCommande",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"id_commande\": 11,\r\n  \"date_commande\": \"2024-10-25 00:00:00\",\r\n  \"prix_total\": 30,\r\n  \"etat\": \"en cours\",\r\n  \"articles\": [\r\n    {\"id_article\": 1, \"quantite\": 10},\r\n    {\"id_article\": 2, \"quantite\": 5},\r\n    {\"id_article\": 3, \"quantite\": 2}\r\n  ]\r\n}\r\n"
+								},
+								"url": {
+									"raw": "http://localhost/eatsmart-pierre/commandes",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"eatsmart-pierre",
+										"commandes"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Sun, 02 Nov 2025 12:46:19 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.62 (Win64) PHP/8.4.0 mod_fcgid/2.3.10-dev"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.4.0"
+								},
+								{
+									"key": "Content-Length",
+									"value": "90"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/html; charset=UTF-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\"id_commande\":11,\"date_commande\":\"2024-10-25 00:00:00\",\"prix_total\":30,\"etat\":\"en cours\"}"
+						}
+					]
 				}
 			]
 		}
